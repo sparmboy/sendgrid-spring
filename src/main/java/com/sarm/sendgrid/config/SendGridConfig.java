@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SendGridConfig {
-    @Value("${mail.outbound.password}")
+    @Value("${sendgrid.apiKey}")
     private String sendGridApiKey;
 
     @Bean

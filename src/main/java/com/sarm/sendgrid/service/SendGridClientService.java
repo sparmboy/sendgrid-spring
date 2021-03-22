@@ -32,13 +32,13 @@ public class SendGridClientService {
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    @Value("${mail.outbound.defaultFrom}")
+    @Value("${sendgrid.defaultFrom}")
     private String defaultFromEmail;
 
-    @Value("${mail.outbound.defaultName}")
+    @Value("${sendgrid.defaultName}")
     private String defaultFromName;
 
-    @Value("${mail.outbound.defaultTemplateId:}")
+    @Value("${sendgrid.defaultTemplateId:}")
     private String defaultTemplateId;
 
     public void send(EmailRequest emailRequest) throws IOException {
