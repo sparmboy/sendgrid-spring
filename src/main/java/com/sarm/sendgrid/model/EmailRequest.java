@@ -16,10 +16,14 @@ public class EmailRequest {
     String subTitle;
     String message;
     String comment;
+    String detailsTitle;
+    String detailsText;
+    List<NameValuePair> details;
     String linkText;
     URL linkUrl;
     List<File> files;
     String cc;
+    Long emailAuditBatchId;
     String templateId;
     private String salutations;
     private Integer unsubscribeId;
